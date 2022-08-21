@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y FORMULARIO</title>
+</head>
+<body style="background-color: coral;">
+    <header>
+        <img src="./img/IMG-20220810-WA0006.jpg" width="100" height="100" alt="incap">
+        <h1>LISTAS EN HTLM</h1>
+        <H2>MENU NAVEGACION</H2>
+</header>
+<nav>
+<ul>
+    <li type="disc" style="color:red">home</li>
+    <li type="square">Productos</li>
+    <li>Contacto</li>
+</ul>
+</nav>
+<section>
+    <!-- method GET pasa los datos por la url, atravez de parametros //method POST pasa los datos de forma interna (no e ven) -->
+    <form action="datos.php" method="post">
+<!-- seleccion de marco de formulario -->
+<fieldset>
+        <!-- seleccion de ingreso de nombre -->
+        <label > Nombre completo:</label>
+        <input name="nombre" type="text" placehoder="Ingrese su nombre completo" required="">
+        <br><br>
+
+        <!-- seleccion email -->
+        <label> E-mail:</label>
+        <imput name="email" type="email" placeholder="Ingrese su Email" required="">
+        <br><br>
+
+        <!-- seleccion de contraseña -->
+        <label>contraseña:</label>
+        </imput name="contraseña" type="pasword" placehoder="Ingrese su contraseña" required="">
+        <br><br>
+
+            <!-- seleccion de hobbies -->
+            <label> selecciona tus hobbies:
+            </label>
+            <br>
+                <imput name="cine" type="checkbox">Cine<br>
+                <imput name="lectura" type="checkbox">Lectura<br>
+                <imput name="Deporte" type="checkbox">Deporte<br>
+                <br>
+                <br>
+
+                <!-- Estado civil -->
+                <label>Estado Civil:</label><br>
+                    <imput name="estcivil" type="radio" value="casado">Casado(a)<br>
+                    <input name="estcivil" type="radio" value="saltero">Soltero(a)<br>
+                    <input name="estcivil" type="radio" value="viudo">Viudo(a)<br>
+                <br>
+                <br>
+                <!-- seleccion opcion lista -->
+                <label>PROGRAMAS TECNICOS</label>
+                <select name="select">
+                    <option>seleccione programa...</option>
+                    <option>Sistemas</option>
+                    <option>Diseño grafico</option>
+                    <option>Contabilidad</option>
+                </select>
+                <br>
+                <br>
+                <label>Tu Comentario</label>
+                    <textarea name="mensajes" rows="5" cols="40"></textarea>
+                </fieldset>
+                <br><br>
+                
+
+
+    
+</body>
+</html>
