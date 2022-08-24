@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LISTA Y DOCUMENTOS</title>
+</head>
+<body style="background-color: coral;">
+    <header>
+        <img src="./img/incap.jpg" alt="100" height="100" hidth="100">
+        <h1>LISTAS Y FORMULARIOS</h1>
+    </header>
+    <nav>
+    <ul>
+        <li type="squeare" style="color: white;">HOME</li>
+        <li type="squeare" style="color: white;">PRODUCTOS</li>
+        <li type="squeare" style="color: white;">SERVICIOS</li>
+        <li type="squeare" style="color: white;">CONTACTOS</li>
+    </ul>
+       
+    </nav>
+<section>
+    <form action="datos.php" method="post">
+    <Fieldset>
+        <Label>NOMBRE COMPLETO</Label>
+        <input type="text" name="nombre" required="" placeholder="ingrese su nombre"><br><br>
+        
+        <Label>EMAIL</Label>
+        <input type="email" name="email" required="" placeholder="ingrese su email"><br><br>
+        
+        <Label>CONTRASEÑA</Label>
+        <input type="password" name="contraseña" required="" placeholder="ingrese su contraseña"><br><br>
+        <hr>
+        <label> SELECCIONE SUS HOBBIES:</label>
+        <br>
+        <input type="checkbox" name="cine">CINE<br>
+        <input type="checkbox" name="lectura">LECTURA<br>
+        <input type="checkbox" name="Deporte">DEPORTE<br>   
+        <hr>
+        <label>ESTADO CIVIL</label><br> 
+        <input type="radio"name="estcivil" value="casado">CASADO(A)<br>
+        <input type="radio"name="estcivil" value="soltero">SOLTERO(A)<br>
+        <input type="radio"name="estcivil" value="viudo">VIUDO(A)<br>
+        <hr>
+        <label>PROGRAMAS TECNICOS</label>
+        <select name="select">
+            <option>seleccione programa</option>
+            <option>SISTEMAS</option>
+            <option>DISEÑO GRAFICO</option>
+            <option>CONTABILIDAD</option>
+        </select>
+        <br><br>
+        <hr>
+        <label>tu comentario</label><br>
+        <textarea name="mensaje" id="" cols="40" rows="5"></textarea>
+        
+    </Fieldset>
+<br><br>
+<button type="submit"> ENVIAR </button>
+<button type="reset"> CANCELAR</button>
+</form>
+</section><br>
+    <footer>Derechos Reservados &COPY;2022 &#64; CARLOS </footer>
+</body>
+</html>
