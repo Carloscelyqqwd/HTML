@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SALDO TM</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<body>
+    <center>
+        <img src="../img/WhatsApp Image 2022-10-12 at 9.26.07 AM.jpeg" height="150" width="150">
+            <h2 style="color: red;">SALDO DE TARGETA TU LLAVE TM</h2>
+            <script>
+                var saldo=0;
+                const tm=2650;
+                saldo=parseInt(prompt("INGRESE SALDO DE SU TARGETA DE TRANSMILENIO"));
+                //PROCESO
+                if(saldo>=tm){
+                    swal("señor usuario","ingrese a sistema", "success");
+                }else{
+                    swal("señor usuario","recargue targeta","error");
+                }
+
+            
+            </script>
+
+    </center>
+</body>
+</html>
